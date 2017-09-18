@@ -1,0 +1,79 @@
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  position: relative;
+}
+
+section h1 {
+  display: flex;
+  padding-top: 10rem;
+  margin-top: 0;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.services {
+  height: 500vh;
+}
+
+section.parallax {
+  position: relative;
+  height: 200vh;
+  color: white;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  bottom: 0rem;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-2px) translateY(500px) scale(4);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+.parallax.bg2::after {
+    /*transform: translateY(1000px);*/
+  /* Display and position the pseudo-element */
+  /*top: 45rem;*/
+}
+
+/* The styling for the static div. */
+
+.static {
+  font-size: 2rem;
+  background: white;
+  color: black;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16rem;
+}
+
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+
+.bg1::after {
+  /*background-color: blueviolet;*/
+  background-image: url('https://placekitten.com/g/900/700');
+  background-repeat: no-repeat
+}
+
+.bg2::after {
+  background-image: url('https://placekitten.com/g/900/700');
+}
+
+.bg3::after {
+  background-color: blueviolet;
+}
