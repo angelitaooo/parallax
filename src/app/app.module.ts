@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { WebsiteComponent } from './website/website.component';
 import { ExampleComponent } from './example/example.component';
+import { PictureComponent } from './picture/picture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WebsiteComponent,
-    ExampleComponent
+    ExampleComponent,
+    PictureComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,11 @@ import { ExampleComponent } from './example/example.component';
       {
         path: 'website',
         component: WebsiteComponent
-      }
+      },
+      {
+        path: 'picture',
+        component: PictureComponent
+      },
     ])
   ],
   providers: [],
