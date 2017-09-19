@@ -7,6 +7,7 @@ import { WebsiteComponent } from './website/website.component';
 import { ExampleComponent } from './example/example.component';
 import { PictureComponent } from './picture/picture.component';
 import { NewParallaxComponent } from './new-parallax/new-parallax.component';
+import { NewParallaxFinalComponent } from './new-parallax-final/new-parallax-final.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NewParallaxComponent } from './new-parallax/new-parallax.component';
     WebsiteComponent,
     ExampleComponent,
     PictureComponent,
-    NewParallaxComponent
+    NewParallaxComponent,
+    NewParallaxFinalComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,10 @@ import { NewParallaxComponent } from './new-parallax/new-parallax.component';
       {
         path: 'new-parallax',
         component: NewParallaxComponent
+      },
+      {
+        path: 'new-parallax-final',
+        component: NewParallaxFinalComponent
       }
     ])
   ],
