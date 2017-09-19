@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WebsiteComponent } from './website/website.component';
 import { ExampleComponent } from './example/example.component';
 import { PictureComponent } from './picture/picture.component';
+import { NewParallaxComponent } from './new-parallax/new-parallax.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WebsiteComponent,
     ExampleComponent,
-    PictureComponent
+    PictureComponent,
+    NewParallaxComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,10 @@ import { PictureComponent } from './picture/picture.component';
         path: 'picture',
         component: PictureComponent
       },
+      {
+        path: 'new-parallax',
+        component: NewParallaxComponent
+      }
     ])
   ],
   providers: [],
