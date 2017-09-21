@@ -96,6 +96,13 @@
   transform: translate(-50%, -50%);
 }
 
+.floating-card p {
+  font-size: 0.5rem;
+}
+.floating-card h5 {
+ margin: 15px 0px;
+}
+
 .staff {
   background-color: purple;
   width: 50%;
@@ -152,17 +159,42 @@ h4 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    border-radius: 18px;
 }
 .languages-larger{
   top:50rem;
 }
+.icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.material-icons{
+  font-size: 65px;
+  line-height: 2;
+  margin: 0 10px 0 10px;
+}
+
 .who-we-are {
   top: 15rem;
 }
 
 .who-we-are-card {
-  top: 50rem;
+  top: 75rem;
+}
+
+.advantages-color:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 239%;
+    position: absolute;
+    top: 216rem;
+    background-color: #59387f;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
 }
 
 @media (min-width: 1200px) {
